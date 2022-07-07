@@ -5,32 +5,23 @@
 --secondary-font: "Raleway";
 
 /* logo colers */
---logo-basic: #2196F3;
---logo-black: #000000;
---logo-white: #FFFFFF;
+    --logo-basic: #2196F3;
+    --logo-black: #000000;
+    --logo-white: #FFFFFF;
 
-/* header colors */
---bg-header: #FFFFFF;
---header-contact: #757575;
---header-contact-hover: #2196F3;
-
-/* footer colors */
---bg-footer: #2F303A;
---footer-adres: #FFFFFF;
---footer-contact: rgba(255, 255, 255, 0.6);
-
-/* bg-colors */
---bg-main: #E5E5E5;
---bg-hat: #2F303A;
---bg-command: #F5F4FA;
---bg-contrast: #FFFFFF;
---hat-hover: #188ce8;
+/* bg-colors --txt-secondery                     */
+    --bg-general: #FFFFFF;
+    --bg-secondery: #2F303A;
+    --bg-main: #E5E5E5;
+    --bg-command: #F5F4FA;
+    --hat-hover: #188ce8;
 
 /* text colors */
 --txt-title: #212121;
---txt-subtext: #757575;
 --txt-general: #FFFFFF;
+--txt-secondery: #757575;
 --highlight-color: #2196F3;
+--footer-contact: rgba(255, 255, 255, 0.6);
 
 /* others */
 
@@ -83,7 +74,7 @@ body {
 /* header */
 
 .header {
-    background-color: var(--bg-header);
+    background-color: var(--bg-general);
 }
 
 .header-link {
@@ -92,6 +83,11 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--txt-title);
+}
+
+.header-link:hover,
+.header-link:focus {
+    color: var(--highlight-color);
 }
 
 .link-page {
@@ -104,20 +100,20 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--header-contact);
+    color: var(--txt-secondery);
 }
 
 .header-mail:hover,
 .header-mail:focus,
 .header-phone:hover,
 .header-phone:focus {
-    color: var(--header-contact-hover);
+    color: var(--highlight-color);
 }
  
 /* footer */
 
 .footer {
-    background-color: var(--bg-footer);
+    background-color: var(--bg-secondery);
 }
 
 .footer-adres,
@@ -129,7 +125,7 @@ body {
 }
 
 .footer-adres {
-    color: var(--footer-adres);
+    color: var(--txt-general);
 }
 
 .footer-mail,
@@ -142,7 +138,7 @@ body {
 /* hat */
 
 .hat {
-    background-color: var(--bg-hat);
+    background-color: var(--bg-secondery);
 }
 
 .hat-title {
@@ -156,6 +152,7 @@ body {
 }
 
 .hat-btn {
+    font-family: var(--main-font), sans-serif;
     background-color: var(--highlight-color);
     font-weight: 700;
     font-size: 16px;
@@ -188,7 +185,7 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--txt-subtext);
+    color: var(--txt-secondery);
 }
 
 /* work */
@@ -209,7 +206,7 @@ body {
 }
 
 .command-list-item {
-    background-color: var(--bg-contrast);
+    background-color: var(--bg-general);
 }
 
 .command-header {
@@ -236,7 +233,7 @@ body {
 }
 
 .command-text {
-    color: var(--txt-subtext);
+    color: var(--txt-secondery);
 }
 
 
@@ -249,6 +246,7 @@ body {
 }
 
 .portfolio-btn {
+    font-family: var(--main-font), sans-serif;
     background-color: var(--bg-command);
     font-weight: 500;
     font-size: 16px;
@@ -261,20 +259,20 @@ body {
 
 .portfolio-btn:hover,
 .portfolio-btn:focus {
-    background-color: var(--header-contact);
+    background-color: var(--highlight-color);
     color: var(--txt-general);
 }
 
 /* projects-list */
 
 .projects-item {
-    background-color: var(--bg-contrast);
+    background-color: var(--bg-general);
 }
 
 .projects-header {
     font-weight: 700;
     font-size: 18px;
-    line-height: 2.00;
+    line-height: 2;
     letter-spacing: 0.06em;
     color: var(--txt-title);
 }
@@ -283,5 +281,5 @@ body {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
-    color: var(--txt-subtext);
+    color: var(--txt-secondery);
 }
